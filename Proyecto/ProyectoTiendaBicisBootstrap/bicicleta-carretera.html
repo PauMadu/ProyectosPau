@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Inicio</title>
+    <style>
+        footer p{
+            margin-left:10px
+        }
+        body{
+            background: linear-gradient(#e0e0e0 30%, #807f7f);
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background: radial-gradient(#163eade8 40%, #828ef7ee);">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder fs-2 " href="inicio.html"><img width="150px" src="icono.png" class="img-fluid"> Bicicletas MaduPau</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-dark " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">Bicicletas Madupau</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="bicicletas.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="ayuda.html">Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4 min-vh-100">
+        <div id="liveAlertPlaceholder"></div>     
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img src="bici-carretera.jpg" class="card-img-top rounded" alt="...">
+                <div class="row mt-3">
+                    <div class="col-3">
+                        <img src="bici-carretera.jpg" class="card-img-top rounded" alt="...">
+                    </div>
+                    <div class="col-3">
+                        <img src="bici-carretera.jpg" class="card-img-top rounded" alt="...">
+                    </div>
+                    <div class="col-3">
+                        <img src="bici-carretera.jpg" class="card-img-top rounded" alt="...">
+                    </div>
+                    <div class="col-3">
+                        <img src="bici-carretera.jpg" class="card-img-top rounded" alt="...">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-6">
+                <h1>Bicicleta de carretera</h1>
+                <h3>Scott Spark 720</h3>
+                <div class="row">
+                    <div class="col-3 col-md-4">
+                        <p class="card-text fw-bolder fs-2 text-danger ">1.599,99€</p>
+                    </div>
+                    <div class="col-3 col-md-4">
+                        <p class="text-muted mb-0">PVP.</p>
+                        <p class="text-muted fs-5 text-decoration-line-through mb-0">1.999,99€</p>
+                    </div>
+                    <div class="col-3 col-md-4">
+                        <p class="text-muted mb-0">DTO.</p>
+                        <div class="position-relative mt-3">
+                            <span class="position-absolute fs-6 top-0 start-25 translate-middle badge rounded bg-danger">
+                                -15%
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-muted mt-3">Vendido a <label class="text-success">77</label> personas.</p>
+                    </div>
+                </div>
+                <div class="mt-3 mb-4">
+                    <button type="button" class="btn btn-secondary"><img src="Corazon.jpg" width="20px" alt=""></button>
+                    <button type="button" class="btn btn-secondary" id="liveAlertBtn2">Añadir al carrito</button>
+                    <button type="button" class="btn btn-primary" id="liveAlertBtn">Comprar</button>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4">
+                        Envío:
+                    </div>
+                    <div class="col-4 text-success">
+                        Envío GRATIS
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4">
+                        Devolución:
+                    </div>
+                    <div class="col-4 col-md-5 text-success">
+                        Devolución GRATIS
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>Descripccion</h2>
+                        <p>Construida con aluminio ligero, cadena doble de fibra de carbono y ruedas de 700C, muy finas para mejorar tanto la velocidad como la resistencia al viento. Es muy ligera, con un asiento elevado. Diseñada para que seas el más rápido de tus amigos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="accordion" id="idAcordeon">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="encabezado-1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#elemento1" aria-expanded="true" aria-controles="elemento-1">
+                                    <h5>Especificaciones</h5>
+                                </button>
+                            </h2>
+                            <div id="elemento1" class="accordion-collapse collapse show" aria-labelledby="encabezado-1" data-bs-parent="#idAcordeon">
+                                <div class="accordion-body">
+                                    - Construida con aluminio ligero.
+                                </div>
+                            </div>
+                            <div id="elemento1" class="accordion-collapse collapse show" aria-labelledby="encabezado-1" data-bs-parent="#idAcordeon">
+                                <div class="accordion-body">
+                                    - Cadena doble de fibra de carbono.
+                                </div>
+                            </div>
+                            <div id="elemento1" class="accordion-collapse collapse show" aria-labelledby="encabezado-1" data-bs-parent="#idAcordeon">
+                                <div class="accordion-body">
+                                    - Ruedas de 700C.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 mb-5">
+                <div class="col">
+                    <div class="accordion" id="idAcordeon2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="encabezado-2">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#elemento2" aria-expanded="true" aria-controles="elemento-2">
+                                    <h5>Opiniones</h5>
+                                </button>
+                            </h2>
+                            <div id="elemento2" class="accordion-collapse collapse show" aria-labelledby="encabezado-2" data-bs-parent="#idAcordeon2">
+                                <div class="accordion-body">
+                                    - Excelente bicicleta, muy buena relación calidad/precio, muy buenos componentes , la bici es muy cómoda y enseguida me he acostumbrado, compra recomendada al 100% y mejor calidad que las de santa fixie
+                                </div>
+                            </div>
+                            <div id="elemento2" class="accordion-collapse collapse show" aria-labelledby="encabezado-2" data-bs-parent="#idAcordeon2">
+                                <div class="accordion-body">
+                                    - El marco es resistente y ligero. Pero el juego de ruedas estaba fuertemente doblado, por esta razon le doy tres estrellas.
+                                </div>
+                            </div>
+                            <div id="elemento2" class="accordion-collapse collapse show" aria-labelledby="encabezado-2" data-bs-parent="#idAcordeon2">
+                                <div class="accordion-body">
+                                    - Increíblemente liviana, vivo en un 2° con entreplantas y sin ascensor, subir y bajar la bici por las escaleras no cuesta nada. Una excelente opción para conmutar por ciudad. Llevo poco tiempo rodando con ella por ciudad pero de momento da la sensación de una muy buena relación €£$/Calidad.
+                                </div>
+                            </div>
+                            <div id="elemento2" class="accordion-collapse collapse show" aria-labelledby="encabezado-2" data-bs-parent="#idAcordeon2">
+                                <div class="accordion-body">
+                                    - Creo que es sin duda una de las mejores Fixie del mercado, el estilo, la calidad, el empaquetado, todo es excelente y maravilloso. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer class="container-fluid text-light fixed-bottom" style="background: radial-gradient(#163eade8 40%, #828ef7ee); ">
+        <div class="row ">
+            <div class="col-6 col-md-7 col-lg-9  col-xxl-10">
+                bicisMadu@gmail.com 
+            </div>
+            <div class="col-6 col-md-5 col-lg-3  col-xxl-2">
+                Designed by: Pau Madueño Sánchez
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        const alert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+            alertPlaceholder.append(wrapper)
+        }
+        const alertTrigger = document.getElementById('liveAlertBtn')
+        if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                alert('Felicidades has realizado una compra en Bicicletas MaduPau. </br> Esperemos que la disfrutes.', 'success')
+            })
+        }
+        const alertTrigger2 = document.getElementById('liveAlertBtn2')
+        if (alertTrigger2) {
+            alertTrigger2.addEventListener('click', () => {
+                alert('El producto se ha añadido a su carrito.', 'warning')
+            })
+        }
+    </script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
