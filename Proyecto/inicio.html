@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Inicio</title>
+    <style>
+        footer{
+            padding: 10px;
+        }
+        body{
+            background: linear-gradient(#e0e0e0 30%, #807f7f);
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background: radial-gradient(#163eade8 40%, #828ef7ee);">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder fs-2 " href="inicio.html"><img width="150px" src="icono.png" class="img-fluid"> Bicicletas MaduPau</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-dark " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">Bicicletas Madupau</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="bicicletas.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="ayuda.html">Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row ">
+            <div class="col">
+                <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner img-fluid rounded">
+                      <div class="ratio ratio-16x9 carousel-item active">
+                        <img src="bici-tienda.jpeg" class=" d-block w-100" alt="...">
+                      </div>
+                      <div class="ratio ratio-16x9 carousel-item">
+                        <img src="bici-carretera.jpg" class=" d-block w-100" alt="...">
+                      </div>
+                      <div class="ratio ratio-16x9 carousel-item">
+                        <img src="bici-montaña.jpg" class=" d-block w-100" alt="...">
+                      </div>
+                      <div class="ratio ratio-16x9 carousel-item">
+                        <img src="bici-tandem.jpg" class=" d-block w-100"  alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-3 justify-content-center">
+            <div class="col text-center">
+                <ul class="list-group mt-3 mb-3 ">
+                    <a href="#" class="list-group-item list-group-item-action ">
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <h5 class="text-primary ">¿Quiénes somos?</h5>
+                            <small>Hace 1 semana</small>
+                        </div>
+                        <p class="mb-1">Bicicletas Madupau es una pequeña empresa creada en Octubre de 2022, y su tienda física se encuentra en la C/Tenerías, en Castellón de la Plana, Provincia de Castellón,España.</p>
+                        <small class="text-muted">Leer mas..</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="text-primary">Como empezamos...</h5>
+                            <small>Hace 2 semana</small>
+                        </div>
+                        <p class="mb-1">Surgió de un proyecto emprendedor junto con dos compañeros.
+                            La aventura empezó creando una tienda de bicicletas online, donde de momento tenemos 3 modelos a la venta, pero próximamente esto cambiará ya que tenemos en mente otros 2 modelos adicionales y totalmente revolucionarios, que creemos que cambiarán y revolucionarán el mundo del ciclismo.</p>
+                        <small class="text-muted">Leer mas..</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="text-primary">Objetivos</h5>
+                            <small>Hace 2 semana</small>
+                        </div>
+                        <p class="mb-1">Nuestros objetivos son promover el deporte en la sociedad a través del ciclismo, ya que consideramos que es uno de los deportes más preciosos, en el cual además de ejercitar nuestro cuerpo, puede ayudarnos a tener momentos de desconexión, conocer nueva gente y ver increíbles paisajes.
+                        </p>
+                        <small class="text-muted">Leer mas..</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="text-primary">Patrocinadores</h5>
+                            <small>Hace 3 semana</small>
+                        </div>
+                        <p class="mb-1">Además  recientemente gracias a nuestra popularidad y expansión obtuvimos ayudas de Proveedores como Gatorade, y gracias a este impulso económico por parte de los proveedores, pudimos obtener una sede para inaugurar nuestra primera tienda física oficial.</p>
+                        <small class="text-muted">Leer mas..</small>
+                    </a>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-light" style="background: radial-gradient(#163eade8 40%, #828ef7ee); ">
+        <div class="row ">
+            <div class="col-6 col-md-7 col-lg-9  col-xxl-10">
+                bicisMadu@gmail.com 
+            </div>
+            <div class="col-6 col-md-5 col-lg-3  col-xxl-2">
+                Designed by: Pau Madueño Sánchez
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
