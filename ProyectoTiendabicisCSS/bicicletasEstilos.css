@@ -1,0 +1,111 @@
+.contenido{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.fondo{
+    background: linear-gradient(#929292 20%, #020202);
+    padding: 25px;
+    border-radius: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+}
+.fondo:first-child{
+    margin-top: 120px;
+}
+.t{
+    color: white;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-top:-20px;
+}
+.imagen {
+    background-size: cover;
+
+    background-position: center center;
+    border-radius: 20px;
+    margin: auto;
+}
+.foto1{
+    background-image: url("mikkel-bech-yjAFnkLtKY0-unsplash.jpg");
+}
+.foto2{
+    background-image: url("mejor-bicicleta-tandem.jpg");
+    display: flex; 
+    justify-content: flex-end;
+}
+.foto3{
+    background-image: url("patrick-hendry-1ow9zrlldJU-unsplash.jpg");
+}
+.contText{
+    background-color: rgba(117, 114, 114, 0.39);
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+h2{
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-bottom: -40px;
+}
+.contText p{
+    color: white;
+    font-size: 15px;
+    margin: 25px;
+    text-align: justify;
+}
+.contText input{
+    margin-top: -80px;
+    font-size: 20px;
+}
+
+@media (max-width:800px){
+    .fondo{
+        width: 550px;
+    }
+    .t{
+        font-size: 35px;
+    }
+    .imagen{
+        background-size: cover;
+    }
+    .foto1{
+        background-size: cover;
+    }
+    .contText{
+        width: 200px;
+        height: 400px;
+        
+    }
+    h2{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .contText p{
+        font-size: 11.5px;
+        margin-top: 0px;
+    }
+    .contText input{
+        margin-top: -25px;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    input:hover{
+        transform: scale(1.07);
+        transition: 0.25s;
+    }
+    
+}
+
+

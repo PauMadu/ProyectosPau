@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Bicis Madupau - Online</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="inicioEstilos.css">
+</head>
+<script>
+    function mostrar(){
+        document.getElementById("idMenu").classList.toggle("mostrar");;
+    }
+</script>
+<body>
+    <nav>
+        <div class="icono"><div class="titulo"><a href="inicio.html"><h1 class="b">Bicicletas</h1><h1 class="m">Madupau</h1></a></div></div>
+        <ul class="navBar">
+            <li><input type='submit' name="comprar" value="Inicio" class="transparente" onclick="location.href='inicio.html'"/></li>
+            <li><input type='submit' name="comprar" value="Productos" class="transparente" onclick="location.href='bicicletas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ofertas" class="transparente" onclick="location.href='ofertas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ayuda" class="transparente" onclick="location.href='ayuda.html'"/></li>
+        </ul>
+        <button onclick="mostrar()"></button>
+        <div class="menu" id="idMenu">
+            <ul>
+            <li><input type='submit' name="comprar" value="Inicio" class="transparente" onclick="location.href='inicio.html'"/></li>
+            <li><input type='submit' name="comprar" value="Productos" class="transparente" onclick="location.href='bicicletas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ofertas" class="transparente" onclick="location.href='ofertas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ayuda" class="transparente" onclick="location.href='ayuda.html'"/></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="inicio">
+        
+        <div class="fotoInicio"></div>
+        <div class="contenido">
+            <h2>¿Quiénes somos?</h2>
+            <p>Bicicletas Madupau es una pequeña empresa creada en Octubre de 2022, y su tienda física se encuentra en la C/Tenerías, en Castellón de la Plana, Provincia de Castellón,España.  
+                </br></br>
+                Surgió de un proyecto emprendedor junto con dos compañeros.
+                La aventura empezó creando una tienda de bicicletas online, donde de momento tenemos 3 modelos a la venta, pero próximamente esto cambiará ya que tenemos en mente otros 2 modelos adicionales y totalmente revolucionarios, que creemos que cambiarán y revolucionarán el mundo del ciclismo.
+                </br></br>
+                Nuestros objetivos son promover el deporte en la sociedad a través del ciclismo, ya que consideramos que es uno de los deportes más preciosos, en el cual además de ejercitar nuestro cuerpo, puede ayudarnos a tener momentos de desconexión, conocer nueva gente y ver increíbles paisajes.
+                </br></br>
+                Además  recientemente gracias a nuestra popularidad y expansión obtuvimos ayudas de Proveedores como Gatorade, y gracias a este impulso económico por parte de los proveedores, pudimos obtener una sede para inaugurar nuestra primera tienda física oficial.
+            </p>
+        </div>
+        <footer>
+            <p>bicisMadu@gmail.com</p>
+            <p>Designed by: Pau Madueño Sánchez</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

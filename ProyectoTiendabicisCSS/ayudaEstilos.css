@@ -1,0 +1,118 @@
+body{
+    background-image: url("tienda-bicis.jpeg");
+    background-size: cover;
+}
+.contenido{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 867px;
+    margin-bottom: 3%;
+}
+
+.tabla{
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid black;
+    border-radius: 20px;
+    width:700px;
+    display: flex;
+    margin-top: 120px;
+}
+.izquierda{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    margin-left: 40px;
+    font-size: 14px;
+    margin-top: -57px;
+}
+    
+img{
+    width: 23px;
+    height: 25px;
+    margin-right: 10px;
+}
+.derecha{
+    width: 350px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.t{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+h2{
+    margin-top: 15px;
+    margin-left: -70px;
+    font-size: 35px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.fila{
+    margin-top: 30px;
+    display: flex;
+}
+.text{
+    margin-left: 20px;
+}
+.caja input{
+    font-size: 14px;
+    margin-top: -10px;
+    margin-left: 30px;
+    color: black;
+    border: 1px solid black;
+    font-weight:lighter;
+    background-color: #b6b6b6;
+    cursor:text;
+}
+input:hover{
+    transform: none;
+}
+.dos input{
+    margin-left: 48px;
+}
+textarea{
+    font-size: 14px;
+    width: 197px;
+    height: 100px;
+    margin-left: 23px;
+    margin-top: -5px;
+    background-color: #b6b6b6;
+    border: 1px solid black;
+    border-radius: 8px;
+    resize: none;
+    padding: 10px;
+}
+
+.boton{
+    display: flex;
+    justify-content: flex-end;   
+}
+.boton input{
+    margin: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px black;
+}
+
+@media (max-width:800px){
+    .tabla{
+        width: 550px;
+    }
+    h2{
+        margin-left: -55px;
+    }
+    .text{
+        margin-right: -10px;
+        margin-left: -30px;
+    }
+    .boton input{
+        margin-right: 5px;
+    }
+}

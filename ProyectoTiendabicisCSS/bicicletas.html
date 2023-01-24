@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="bicicletasEstilos.css">
+</head>
+<script>
+    function mostrar(){
+        document.getElementById("idMenu").classList.toggle("mostrar");;
+    }
+</script>
+<body>
+    <nav>
+        <div class="icono"><div class="titulo"><a href="inicio.html"><h1 class="b">Bicicletas</h1><h1 class="m">Madupau</h1></a></div></div>
+        <ul class="navBar">
+            <li><input type='submit' name="comprar" value="Inicio" class="transparente" onclick="location.href='inicio.html'"/></li>
+            <li><input type='submit' name="comprar" value="Productos" class="transparente" onclick="location.href='bicicletas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ofertas" class="transparente" onclick="location.href='ofertas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ayuda" class="transparente" onclick="location.href='ayuda.html'"/></li>
+        </ul>
+        <button onclick="mostrar()"></button>
+        <div class="menu" id="idMenu">
+            <ul>
+            <li><input type='submit' name="comprar" value="Inicio" class="transparente" onclick="location.href='inicio.html'"/></li>
+            <li><input type='submit' name="comprar" value="Productos" class="transparente" onclick="location.href='bicicletas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ofertas" class="transparente" onclick="location.href='ofertas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ayuda" class="transparente" onclick="location.href='ayuda.html'"/></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contenido">
+        <div class="fondo">
+            <h1 class="t">Bicicleta de carretera</h1>
+            <div class="imagen foto1">
+                <div class="contText">
+                    <h2>Scott Spark 720</h2>
+                    <p>Construida con aluminio ligero, cadena doble de fibra de carbono y ruedas de 700C, muy finas para mejorar tanto la velocidad como la resistencia al viento. Es muy ligera, con un asiento elevado.
+                    </br>Diseñada para que seas el más rápido de tus amigos.</p>
+                    <p class="precio">1.999,99€</p>
+                    <input type='submit' name="comprar"  value="Comprar" class="primario" onclick="location.href='bicicletasComprado.html'"/>
+                </div>
+            </div>
+        </div>
+        <div class="fondo">
+            <h1 class="t">Tandem</h1>
+            <div class="imagen foto2">
+                <div class="contText">
+                    <h2>Tandem V2</h2>
+                    <p>Con 2 sillines de máxima calidad, con un diseño clásico que te hará recordar a los años 90.</br>
+                        También tiene un cuadro resistente a todos los pesos.
+                    </br>Para que puedas tener una momento perfecto junto a tu persona elegida.</p>
+                    <p class="precio">799,99€</p>
+                    <input type='submit' name="comprar" value="Comprar" class="primario" onclick="location.href='bicicletasComprado.html'"/>
+                </div>
+            </div>
+        </div>
+        <div class="fondo">
+            <h1 class="t">Bicicleta de Montaña</h1>
+            <div class="imagen foto3">
+                <div class="contText">
+                    <h2>Scott Spark 500</h2>
+                    <p>Ruedas resistentes a todas las superficies, con múltiples compartimentos para guardar sus objetos, una gran suspensión, y manillar acorde a sus características.</br>
+                        Hecha para todo tipo de terreno, y para lanzarte a la aventura sin ningún tipo de duda.</p>
+                    <p class="precio">1.199,99€</p>
+                    <input type='submit' name="comprar" value="Comprar" class="primario" onclick="location.href='bicicletasComprado.html'"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>bicisMadu@gmail.com</p>
+        <p>Designed by: Pau Madueño Sánchez</p>
+    </footer>
+</body>
+</html>

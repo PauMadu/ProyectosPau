@@ -1,0 +1,125 @@
+
+.caja{
+    display: flex;
+    justify-content: center;    
+}
+.fondo{
+    background: linear-gradient(#CAC9EF 30%,#0501BC);
+    padding: 20px;
+    border-radius: 12px;
+    width: 30%;
+    margin: 1%;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+.rentable{
+    background: linear-gradient(#CAC9EF 20%,#ba0101e0);
+}
+h2{
+    text-decoration: underline;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imagen{
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center center;
+    margin: 3%;
+    height: 400px;
+    width: 90%;
+    border: 2px solid black;
+}
+
+.uno{
+    background-image: url("seguroAntiPinchazos.JPG");
+}
+.dos{
+    background-image: url("seguroTodoRiesgo.jpg");
+}
+.tres{
+    background-image: url("seguroAntiRobos.jpg");
+}
+
+.fondo p{
+    color: white;
+    font-size: 16px;
+    margin: 25px;
+    text-align: justify;
+}
+.fondo input{
+    margin-top: -20px;
+}
+.new{
+    background-color: #DF0000;
+    border-radius: 12px;
+    color: white;
+    font-size: 40px;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width:1530px){
+    .new{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .fondo p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1295px){
+    body{
+        background: linear-gradient(#e0e0e0 5%, #807f7f);
+    }
+    .caja{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .fondo{
+        margin-top: 20px;
+        width: 60%;
+    }
+    .fondo:first-child{
+        margin-top: 120px;
+    }
+    .imagen{
+            width: 93%;
+        }
+    .new{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 47px;
+    }
+    .fondo p{
+        font-size: 16px;
+    }
+    .fondo input{
+        margin-top: -10px;
+        padding: 15px;
+    }
+}
+@media (max-width:870px){
+    .new{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .fondo p{
+        font-size: 15px;
+    }
+    .fondo{
+        width: 65%;
+    }
+}

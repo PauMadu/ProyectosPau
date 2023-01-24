@@ -1,0 +1,51 @@
+.inicio{
+    display: flex; 
+    flex-direction: column;
+}
+.fotoInicio{
+    background-image: url("tienda-bicis.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+    margin-top: 120px;
+
+}
+
+
+.contenido{
+    color: black;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 45px;
+    font-weight: bold;
+    color: #163ead;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.contenido p{
+    text-align: justify;
+    width: 700px;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+@media (max-width:800px){
+    .fotoInicio{
+        height: 300px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    .contenido p{
+        width: 370px;
+        font-size: 14px;
+    }
+}

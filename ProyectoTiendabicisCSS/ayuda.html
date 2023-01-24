@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="ayudaEstilos.css">
+</head>
+<script>
+    function mostrar(){
+        document.getElementById("idMenu").classList.toggle("mostrar");;
+    }
+</script>
+<body>
+    <nav>
+        <div class="icono"><div class="titulo"><a href="inicio.html"><h1 class="b">Bicicletas</h1><h1 class="m">Madupau</h1></a></div></div>
+        <ul class="navBar">
+            <li><input type='submit' name="comprar" value="Inicio" class="transparente" onclick="location.href='inicio.html'"/></li>
+            <li><input type='submit' name="comprar" value="Productos" class="transparente" onclick="location.href='bicicletas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ofertas" class="transparente" onclick="location.href='ofertas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ayuda" class="transparente" onclick="location.href='ayuda.html'"/></li>
+        </ul>
+        <button onclick="mostrar()"></button>
+        <div class="menu" id="idMenu">
+            <ul>
+            <li><input type='submit' name="comprar" value="Inicio" class="transparente" onclick="location.href='inicio.html'"/></li>
+            <li><input type='submit' name="comprar" value="Productos" class="transparente" onclick="location.href='bicicletas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ofertas" class="transparente" onclick="location.href='ofertas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ayuda" class="transparente" onclick="location.href='ayuda.html'"/></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contenido">
+        <div class="tabla">
+            <div class="izquierda">
+                <div class="fila">
+                    <img src="gmail.png" alt="">
+                    <p>bicisMadu@gmail.com</p>
+                </div>
+                <div class="fila">
+                    <img src="ubi.png" alt="">
+                    <p>C/Tenerias nº73, Castellon, España.</p>
+                </div>
+                <div class="fila">
+                    <img src="telefono.png" alt="">
+                    <p>+34 123-456-789</p>
+                </div>  
+            </div>
+            <div class="derecha">
+                <div class="t">
+                    <h2>Contacto</h2>
+                </div>
+                <div class='fila'>
+                    <div class="text"><label for="nombre">Nombre:</label></div>
+                    <div class="caja"><input placeholder="Introduzca su Nombre" name="nombre"></div>
+                </div>
+                <div class='fila'>
+                    <div class="text"><label for="nombre">Gmail:</label></div>
+                    <div class="caja dos"><input placeholder="ejemplo@gmail.com" name="gmail"></div>
+                </div>
+                <div class='fila'>
+                    <div class="text"><label for="nombre">Consulta:</label></div>
+                    <div class="caja"><textarea placeholder="Escriba aqui su pregunta..." name="nombre"></textarea></div>
+                </div>
+                <div class='boton'>
+                    <input type='submit' name="enviar" value="Enviar" class="ayuda" onclick="location.href='ayudaEnviado.html'"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>bicisMadu@gmail.com</p>
+        <p>Designed by: Pau Madueño Sánchez</p>
+    </footer>
+</body>
+</html>
