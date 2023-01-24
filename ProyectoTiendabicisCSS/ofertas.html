@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="ofertasEstilos.css">
+</head>
+<script>
+    function mostrar(){
+        document.getElementById("idMenu").classList.toggle("mostrar");;
+    }
+</script>
+<body>
+    <nav>
+        <div class="icono"><div class="titulo"><a href="inicio.html"><h1 class="b">Bicicletas</h1><h1 class="m">Madupau</h1></a></div></div>
+        <ul class="navBar">
+            <li><input type='submit' name="comprar" value="Inicio" class="transparente" onclick="location.href='inicio.html'"/></li>
+            <li><input type='submit' name="comprar" value="Productos" class="transparente" onclick="location.href='bicicletas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ofertas" class="transparente" onclick="location.href='ofertas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ayuda" class="transparente" onclick="location.href='ayuda.html'"/></li>
+        </ul>
+        <button onclick="mostrar()"></button>
+        <div class="menu" id="idMenu">
+            <ul>
+            <li><input type='submit' name="comprar" value="Inicio" class="transparente" onclick="location.href='inicio.html'"/></li>
+            <li><input type='submit' name="comprar" value="Productos" class="transparente" onclick="location.href='bicicletas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ofertas" class="transparente" onclick="location.href='ofertas.html'"/></li>
+            <li><input type='submit' name="comprar" value="Ayuda" class="transparente" onclick="location.href='ayuda.html'"/></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="caja">
+        <div class="fondo">
+            <h2>Seguro Antipinchazos:</h2>
+            <div class="imagen uno"></div>
+            <p>Este servicio MENSUAL en caso de pinchazo en cualquiera de las ruedas, le aporta una sustitución e instalación de la rueda pinchada.<br/>Se le intentará reparar la cámara de aire, pero si no es posible, se le sustituirá por una nueva.<br/>Inclusive por cortesía de la casa, si la llanta ha sido levemente dañada también se la reparamos.</p>
+            <p>14,99€/mes</p>
+            <input type='submit' name="comprar" value="Subscribirse" class="secundario" onclick="location.href='bicicletasComprado.html'"¡/>
+        </div>
+        <div class="fondo rentable">
+            <h2>Seguro a todo Riesgo:</h2>
+            <div class="imagen dos">
+                <div class="new">
+                    NEW!!  NEW!!  NEW!!
+                </div>
+            </div>
+            <p>Este nuevo e innovador servicio MENSUAL, esta diseñado para abarcar todos los posibles problemas, ya que cubre por completo a su bicicleta, cualquier imperfecto, pinchazo.<br/>Y por si no fuera suficiente, con la adquisición de esta subscripción le regalamos un candado digital, para que pueda anclar su bicicleta y despreocuparse de cualquier intento de robo.</p>
+            <p>19,99€/mes</p>
+            <input type='submit' name="comprar" value="Subscribirse" class="peligro" onclick="location.href='bicicletasComprado.html'" />
+        </div>
+        <div class="fondo">
+            <h2>Seguro Antirrobos:</h2>
+            <div class="imagen tres"></div>
+            <p>En este servicio MENSUAL le otorgamos las herramientas para que su bicicleta siempre esté protegida, gracias a nuestra avanzada tecnología.<br/>Cuando la deje en la calle nuestro candado tecnológico sólo se podrá abrir con su huella digital o su código secreto. Además todos los elementos de su bici tendrán un dispositivo de geolocalización.</p>
+            <p>14,99€/mes</p>
+            <input type='submit' name="comprar" value="Subscribirse" class="secundario" onclick="location.href='bicicletasComprado.html'"/>
+        </div>
+        
+    </div>
+    <footer>
+        <p>bicisMadu@gmail.com</p>
+        <p>Designed by: Pau Madueño Sánchez</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.comprado{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(117, 114, 114);
+    width: 450px;
+    height: 300px;
+    margin: auto;
+    margin-top: 250px;
+    margin-bottom: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    box-shadow: 7px 7px 20px;
+}
+p{
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    margin: 15px;
+}
+input{
+    margin:15px;
+    box-shadow: 3px 3px 10px black;
+}
