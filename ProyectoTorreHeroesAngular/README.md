@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
+To mount correctly the project, you must create a new Angular project (`ng new ProyectoTorreDeHeroesAngular`). Then, paste the content of the repository into the root of the project.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
