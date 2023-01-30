@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
+## Run the project
+
+To execute the project you must create a new project ('ng new name_of_the_project'), afterwards, put the archives into the root folder and replace all the files you have to. Later, execute ('npm install bootstrap jquery @popperjs/core').
+Once finished mount the project executing ('ng serve --open') while in the file.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
