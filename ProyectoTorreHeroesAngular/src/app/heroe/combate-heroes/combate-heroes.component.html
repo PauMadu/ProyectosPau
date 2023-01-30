@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-2">
+            <select [(ngModel)]="idA" class="form-select">
+                <option *ngFor="let heroe of heroes ; let i = index" value="{{i}}"> {{heroe.nombre}}</option>
+            </select>
+        </div>
+        <div class="col-1 d-flex justify-content-center">
+            <label class="fs-3">VS</label>
+        </div>
+        <div class="col-2">
+            <select [(ngModel)]="idB" class="form-select">
+                <option *ngFor="let enemigo of enemigos ; let i = index" value="{{i}}"> {{enemigo.nombre}}</option>
+            </select>
+        </div>
+        <p>
+            <button (click)="pelea()" class="btn btn-danger mt-2">Fight</button>
+        </p>
+    </div>
+</div>

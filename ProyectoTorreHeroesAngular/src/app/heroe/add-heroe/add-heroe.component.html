@@ -1,0 +1,40 @@
+<div class="container ">
+  <div class="row mt-4">
+    <div class="col">
+      <h2>Alta heroe</h2>
+      <div class="row">
+        <div class="col-1">
+          <span>Nombre: </span>
+        </div>
+        <div class="col-2">
+          <input type="text" [(ngModel)]="heroe.nombre" class="form-control">
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-1">
+          <span>Titulo: </span>
+        </div>
+        <div class="col-2">
+          <select [(ngModel)]="heroe.titulo" class="form-select">
+            <option *ngFor="let titulo of titulos" value="{{titulo.id}}"> {{titulo.nombre}}</option>
+          </select>
+        </div>
+      </div>
+        
+      <div class="row mt-2">
+        <div class="col-1">
+          <span>Imagen:</span>
+        </div>
+        <div class="col-5">
+          <input type="file" (change)="selectFile($event)" class="form-control">
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <button *ngIf="heroes.length<4" (click)="this.nuevoHeroe()" class="btn btn-secondary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
