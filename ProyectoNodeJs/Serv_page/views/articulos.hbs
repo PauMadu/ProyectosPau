@@ -1,0 +1,43 @@
+{{> cabeza}}
+    <div class="row">
+        <div class="col">
+            <h2>{{titulo}}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form action="" method="post">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ean13</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each articulos}}
+                            <tr>
+                                <input type="hidden" name="articulos[{{@index}}][id]" value="{{this.id}}">
+                                <td><input type="text" class="form-control-plaintext" readonly name="articulos[{{@index}}][ean13]" value="{{this.ean13}}"></td>
+                                <td><input type="text" class="form-control-plaintext" readonly name="articulos[{{@index}}][nombre]" value="{{this.nombre}}"></td>
+                                <td><input type="text" class="form-control-plaintext" readonly name="articulos[{{@index}}][precio]" value="{{this.precio}}"></td>
+                                <td><a href="" class="btn btn-primary">Modificar</a></td>
+                            </tr>
+                        {{else}}
+                            <tr>
+                                <td>SIN VALORES</td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col">
+                    <a href="mispedidos" class="btn btn-primary">Volver</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{{> pie}}

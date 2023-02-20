@@ -1,0 +1,46 @@
+{{> cabeza}}
+    <div class="row">
+        <div class="col">
+            <h2>{{titulo}}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <a href="pedido" class="btn btn-primary">+</a>
+                </div>
+                <div class="col">
+                    <a href="articulos" class="btn btn-primary">Modificar</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form action="" method="post">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Articulo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each pedido}}
+                                    <tr>
+                                        <input type="hidden" name="pedidos[{{@index}}][id]" value="{{this.id}}">
+                                        <td><input type="text" class="form-control-plaintext" readonly name="pedidos[{{@index}}][fecha]" value="{{this.fecha}}"></td>
+                                        <td><input type="text" class="form-control-plaintext" readonly name="pedidos[{{@index}}][pedido]" value="{{this.pedido}}"></td>
+                                    </tr>
+                                {{else}}
+                                    <tr>
+                                        <td>SIN VALORES</td>
+                                    </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{{> pie}}
