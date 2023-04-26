@@ -2,8 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ComponentsService } from 'src/app/services/components.service';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-import { ChistesService } from 'src/app/services/chistes.service';
-import Chiste from 'src/app/interfaces/chiste.interface';
+
 
 @Component({
   selector: 'app-contacto',
@@ -12,20 +11,11 @@ import Chiste from 'src/app/interfaces/chiste.interface';
 })
 export class ContactoComponent implements OnInit{
 
-  chistes:Chiste[]
-
   constructor(
-    private chistesService:ChistesService,
     private componentsservice: ComponentsService,
     private router: Router
     
-  ) { 
-
-    this.chistes=[{
-      chiste:"No hay chistes.",
-      numero:"Chiste 0",
-    }]
-  }
+  ) {  }
 
   public sendEmail(e: Event) {
     e.preventDefault();
@@ -39,9 +29,6 @@ export class ContactoComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.chistesService.getChiste().subscribe(chistes => {
-      this.chistes = chistes;
-    })
   }
 
   clickLogOut() {

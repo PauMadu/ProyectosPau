@@ -1,0 +1,40 @@
+.fondoFav{
+    background-image: url('/assets/fondo.png');
+    background-position-y:-1em;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.tituloFav{
+    width: 10em; height: 11em; 
+    background-image: url('/assets/Favoritos.png');
+    background-position-x: center;
+    background-position-y: -6em;
+    background-size: 45em;
+    background-repeat: no-repeat;
+}
+
+.card{
+    opacity: 0.8;
+    width: 15em;
+}
+
+.caractInstru{
+    background-color: #a0e3fc; 
+    box-shadow: 0px 0px 16px 5px #106BCB;
+}
+
+
+.slider {
+    background-color: rgba(128, 128, 128, 0.493);
+    border-radius: 1em;
+    margin-left: 2.2em;
+    margin-bottom: 2em;
+    margin-top: 3em;
+    display: flex;
+    width: 90%;
+    height: 15vh;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}

@@ -3,6 +3,7 @@
     background-position-y:-1em;
     background-size: cover;
     background-repeat: repeat;
+    height: 100%;
 }
 
 .tituloContacto{
@@ -14,17 +15,24 @@
     background-repeat: no-repeat;
 }
 
+form{
+    background-color: rgba(90, 90, 90, 0.548);
+    border: #31b2ddec 1px solid;
+    border-radius: 2em;
+    padding-left: 4em;
+    padding-right: 5em;
+}
 
 .texto{
     opacity: 0.78;
     border-radius: 5em;
-    padding-right: 3em;
+    height: 2.5em;
+    width: 16em;
 }
 textarea{
     opacity: 0.78;
     border-radius: 20px;
     padding-right: 3em;
-
 }
 
 .enviar{
@@ -32,16 +40,3 @@ textarea{
     box-shadow: 0px 0px 16px 5px rgba(70, 187, 207, 0.733);
 }
 
-
-.slider {
-    background-color: rgba(128, 128, 128, 0.493);
-    border-radius: 1em;
-    margin-left: 2.2em;
-    margin-bottom: 2em;
-    display: flex;
-    width: 90%;
-    height: 15vh;
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
