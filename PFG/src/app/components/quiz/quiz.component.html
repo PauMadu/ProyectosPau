@@ -1,0 +1,164 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background: radial-gradient(#39566c 40%, #54697a); opacity: 0.9;">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bolder fs-2 " href="/main" style="font-family: Georgia, 'Times New Roman', Times, serif;"><img width="50px" src="assets/icono.png" class="img-fluid"> InstruChoice</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-dark " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel" style="font-family: Georgia, 'Times New Roman', Times, serif;">InstruChoice</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/main">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/favoritos">Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button (click)="clickLogOut()" class="btn btn-outline-danger mt-0">Log out</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+<div class="fondoQuiz container-fluid p-1">
+    <div class="row">
+        <div class="tituloQuiz col d-flex justify-content-center mb-3 mt-4"></div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-8 ">
+            <form name="" action="">
+                <div class="pregunta row rounded p-3 m-0 mt-5 text-white img-fluid rounded">
+                    <label class="col-12 col-md-8 " for="" onsubmit="getRadioButtonSelectedValue1('opcion1')">
+                        <span class="fs-4">Qué opción te representa más?</span>
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion1" value="1">Soy impulsivo e inquieto.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion1" value="2">Soy tranquilo, trabajador. 
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion1" value="3">Soy creativo, disciplinado y trabajo bien en equipo.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion1" value="0">No estoy seguro.
+                    </label>
+                </div>
+
+                <div class="pregunta row rounded p-3 m-0 mt-5 text-white img-fluid rounded">
+                    <label class="col-12 col-md-8 " for="">
+                        <span class="fs-4">¿Qué opción te representa más?</span>
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion2" value="1">Me gusta probar cosas nuevas y divertirme.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion2" value="2">Creativo, y tengo sensibilidad musical.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion2" value="3">Tengo paciencia y destreza técnica.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion2" value="0">No estoy seguro.
+                    </label>
+                </div>
+
+                <div class="pregunta row rounded p-3 m-0 mt-5 text-white img-fluid rounded">
+                    <label class="col-12 col-md-8 " for="" id="Radio3">
+                        <span class="fs-4">¿Prefieres los sonidos graves o agudos?</span>
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion3" value="1">Graves.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion3" value="2">Agudos.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion3" value="3">Ni graves ni agudos.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion3" value="0">No estoy seguro.
+                    </label>
+                </div>
+                
+                <div class="pregunta row rounded p-3 m-0 mt-5 text-white img-fluid rounded">
+                    <label class="col-12 col-md-8 " for="" id="Radio4">
+                        <span class="fs-4">¿Te sientes cómodo/a con instrumentos grandes o prefieres algo más pequeño?</span>
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion4" value="1">Prefiero instrumentos pequeños.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion4" value="2">Un tamaño intermedio.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion4" value="3">Prefiero instrumentos grandes.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion4" value="0">Me es indiferente.
+                    </label>
+                </div>
+                
+                <div class="pregunta row rounded p-3 m-0 mt-5 text-white img-fluid rounded">
+                    <label class="col-12 col-md-8 " for="" id="Radio5">
+                        <span class="fs-4">¿Te gustaría aprender a tocar un instrumento clásico o uno más moderno?</span>
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion5" value="1">Prefiero un instrumento clásico.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion5" value="2">Prefiero un instrumento moderno.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion5" value="0">Me es indiferente.
+                    </label>
+                </div>
+                
+                <div class="pregunta row rounded p-3 m-0 mt-5 text-white img-fluid rounded">
+                    <label class="col-12 col-md-8 " for="" id="Radio6">
+                        <span class="fs-4">¿Qué música te suele gustar?</span>
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion6" value="1">Música tranquila.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion6" value="2">Música con ritmo fuerte.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion6" value="3">Música melódica.
+                        <br>
+                        <input class="form-check-input" type="radio" name="opcion6" value="0">No estoy seguro.
+                    </label>
+                </div>
+
+                <div class="row">
+                    <div class="col mt-5 mb-5 d-flex justify-content-start">
+                        <a class="atras btn text-white nav-link p-3" href="/main"></a>
+                    </div>
+                    <div class="col mt-5 mb-5 d-flex justify-content-end">
+                        <input type="submit" onclick="onSubmit()" class="enviar btn text-white">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Por si en algun momento alojo la pagina web y cuando tenga url quiero poner anuncios
+        <div class="col-3">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8327474296369216"crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-format="autorelaxed"
+                data-ad-client="ca-pub-8327474296369216"
+                data-ad-slot="3184663354">
+            </ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+
+
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8327474296369216"
+                crossorigin="anonymous"></script>
+            //Prueba2
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-8327474296369216"
+                data-ad-slot="1127429936"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>-->
+    </div>
+</div>

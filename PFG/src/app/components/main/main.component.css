@@ -1,0 +1,41 @@
+.fondoMain{
+    background-image: url('/assets/fondo.png');
+    background-position-y:-1em;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.tituloMain{
+    width: 10em; height: 13em; 
+    background-image: url('/assets/Inicio.png');
+    background-position-x: center;
+    background-position-y: -8em;
+    background-size: 45em;
+    background-repeat: no-repeat;
+}
+
+.bfav{
+    background-image: url('/assets/main_fav.png'); 
+    background-position: center center; 
+    background-size: 21em; 
+    background-repeat: no-repeat;
+    opacity: 0.9; 
+    height:12em; 
+    width: 18em;
+}
+.bquiz{
+    background-image: url('/assets/main_quiz.png'); 
+    background-position: center center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    height: 12em;
+    width: 18em;}
+
+.titulo{
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+button p{
+    padding-top: 8.3em;
+}
