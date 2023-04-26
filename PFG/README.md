@@ -1,6 +1,21 @@
 # Pb2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+ng new PFC … 
+firebase login madupau@gmail.com
+firebase init → firestore→ use a created project → usuarios-pfc → 2 intro
+ng add @angular/fire … Y … (espacio en el marcado), (espacio en) Autentication (y intro) → web-app
+npm install @emailjs/browser --save
+
+Para bootstrap → npm install bootstrap jquery @popperjs/core → y copiar ("styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+)
 
 ## Development server
 
