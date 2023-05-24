@@ -10,6 +10,8 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent implements OnInit{
+  public emailEnviado: boolean = false;
+  public pagoRealizado: boolean = false;
 
   constructor(
     private componentsservice: ComponentsService,
@@ -22,14 +24,20 @@ export class ContactoComponent implements OnInit{
     emailjs.sendForm('service_w14vs7e', 'template_r1ytb5n', e.target as HTMLFormElement, 'GxOASNR4v70X6RFVK')
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
-        alert("Mensaje enviado")
       }, (error) => {
         console.log(error.text);
       });
   }
 
-  ngOnInit(): void {
+  public enviarEmail(): void{
+    this.emailEnviado = true;
   }
+
+  public realizarPago(): void {
+    this.pagoRealizado = true;
+  }
+
+  ngOnInit(): void {  }
 
   clickLogOut() {
     this.componentsservice.logout()
@@ -38,5 +46,4 @@ export class ContactoComponent implements OnInit{
       })
       .catch(error => console.log(error));
   }
-  
 }

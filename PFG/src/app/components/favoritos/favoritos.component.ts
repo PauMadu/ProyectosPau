@@ -30,6 +30,7 @@ export class FavoritosComponent implements OnInit {
       link_compra:"string.com",
       url_video:"string.com",
       nombre:"Bombo",
+      partitura:"no hay",
     }],
     this.chistes=[{
       chiste:"No hay chistes.",
@@ -38,7 +39,7 @@ export class FavoritosComponent implements OnInit {
   }
 
   ngOnInit(): void {
-      this.instrumentosService.getInstru().subscribe(instrumentos => {
+    this.instrumentosService.getInstru().subscribe(instrumentos => {
       this.instrumentos = instrumentos;
     })
     
@@ -53,12 +54,6 @@ export class FavoritosComponent implements OnInit {
         this.router.navigate(['/login']);
       })
       .catch(error => console.log(error));
-  }
-
-  clickFav(){ //Como consigo la propiedad favoritos, y la puedo modificar??
-    /*this.instrumentosService.getInstru(favoritos).subscribe(instrumentos => {
-      this.instrumentos = instrumentos;
-  })*/
   }
 }
 

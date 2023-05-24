@@ -7,4 +7,5 @@ export default interface Instrumento {
     link_compra:string;
     url_video:string;
     nombre:string;
+    partitura:string;
 }

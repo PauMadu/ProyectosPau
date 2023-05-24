@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'nasalization';
+  src: url('../../../assets/fonts/nasalization-rg.otf') format('truetype');
+}
+
+h2{
+  font-family: 'nasalization';
+}
+

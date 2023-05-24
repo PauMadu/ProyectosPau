@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background: radial-gradient(#39566C 40%, #54697a);">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background: radial-gradient(#39566c 40%, #54697a); opacity: 0.95; ">
     <div class="container-fluid">
-        <a class="navbar-brand fw-bolder fs-2 " href="/main" style="font-family: Georgia, 'Times New Roman', Times, serif;"><img width="50px" src="assets/icono.png" class="img-fluid"> InstruChoice</a>
+        <a class="navbar-brand fw-bolder fs-2 " href="/main" style="font-family: nasalization; text-shadow: 0.1em 0.1em 0.2em black"><img width="50px" src="assets/icono.png" class="img-fluid"> InstruChoice</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end bg-dark " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel" style="font-family: Georgia, 'Times New Roman', Times, serif;">InstruChoice</h5>
+                <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel" style="font-family: nasalization; text-shadow: 0.1em 0.1em 0.2em black">InstruChoice</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -29,33 +29,54 @@
     </div>
 </nav>
 
-
-
-<div class="container" *ngFor="let instru of instrumentos">
-    <div class="row ">
-        <div class="col-4 col-xs-3 col-lg-2 mb-4 d-flex justify-content-center">
-            <a class="atras btn text-white nav-link p-3" href="/instrumentos"></a>
-        </div>
-    </div>   
-    <div class="row justify-content-center g-5">
-        <div class="col">
-            <h2 class="card-title text-capitalize">{{instru.nombre}}</h2>
+<div *ngFor="let instru of instrumentos">
+    <div *ngIf=" instru.nombre == instrumento">
+        <div class="fondoCaract container-fluid mb-4">
+            <div class="row">
+                <div class="ImgNom col d-flex justify-content-center text-white mt-5" style="background-image: url('/assets/instrumentos/{{instru.nombre}}.png');">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 col-xs-3 col-lg-2 m-2 d-flex justify-content-center">
+                    <a class="atras btn text-white nav-link p-3" href="/instrumentos"></a>
+                </div>
+            </div>   
+            
+            <div class="row m-3 d-flex justify-content-around" style="padding-left: 3em;">
+                <div class="descrip col-12 col-sm-9 col-lg-5 col-xl-4 d-flex flex-column align-items-center">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="linkDescrip col-12 "></div>
+                    </div>
+                    <div class="row">
+                        <div class="textDescrip col-12 d-flex justify-content-center text-white fs-5 mb-4">
+                            <p>{{instru.descripcion}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="links col-12 col-md-6 d-flex align-items-center flex-column">
+                    <div class="row mb-2">
+                        <a class="linkVideo col-12 col-md-4 d-flex justify-content-center align-items-center" href="{{instru.url_video}}">
+                        </a>
+                    </div>
+                    <div class="row mb-2">
+                        <a class="linkTienda col-12 col-md-4 d-flex justify-content-center align-items-center" href="{{instru.link_compra}}" >
+                        </a>
+                    </div>
+                    <div *ngFor="let usu of usuarios">
+                        <div *ngIf="usu.email == emailF">
+                            <div *ngIf="usu.accesoPart == false" class="row">
+                                <a onclick="partiturasHabilitadas()" class="linkPartituras col-12 col-md-4 d-flex justify-content-center align-items-center" href="/premium" >
+                                </a>
+                            </div>
+                            <div *ngIf="usu.accesoPart == true" class="row">
+                                <a onclick="partiturasHabilitadas()" class="linkPartituras col-12 col-md-4 d-flex justify-content-center align-items-center" href="{{instru.partitura}}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <p>Descripcion:{{instru.descripcion}}</p>
-        </div>
-        <div class="col">
-            <p>Video:{{instru.url_video}}</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <p>Partituras</p>
-        </div>
-        <div class="col">
-            <a href="{{instru.link_compra}}">Link compra</a>
-        </div>
-    </div>
+    
 </div>

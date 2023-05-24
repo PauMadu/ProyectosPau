@@ -9,7 +9,9 @@ import { InstrumentosComponent } from './components/instrumentos/instrumentos.co
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { CaracteristicasInstruComponent } from './components/caracteristicas-instru/caracteristicas-instru.component';
-import { ResultadoQuizComponent } from './components/resultado-quiz/resultado-quiz.component';
+import { ResultadoQuizComponent } from './components/quiz/resultado-quiz/resultado-quiz.component';
+import { PartiturasPremiumComponent } from './components/caracteristicas-instru/partituras-premium/partituras-premium.component';
+import { PoliticaPrivacidadComponent } from './components/politica-privacidad/politica-privacidad.component';
 
 const routes: Routes = [{ path: '', pathMatch: 'full', redirectTo: '/main' },
 {
@@ -37,6 +39,10 @@ const routes: Routes = [{ path: '', pathMatch: 'full', redirectTo: '/main' },
 { path: 'resultado', component: ResultadoQuizComponent,
 ...canActivate(() => redirectUnauthorizedTo(['/login']))
 },
+{ path: 'premium', component: PartiturasPremiumComponent,
+...canActivate(() => redirectUnauthorizedTo(['/login']))
+},
+{ path: 'privacidad', component: PoliticaPrivacidadComponent},
 ];
 
 @NgModule({

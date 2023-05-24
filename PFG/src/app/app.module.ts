@@ -16,7 +16,9 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { ReactiveFormsModule } from '@angular/forms';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { CaracteristicasInstruComponent } from './components/caracteristicas-instru/caracteristicas-instru.component';
-import { ResultadoQuizComponent } from './components/resultado-quiz/resultado-quiz.component';
+import { ResultadoQuizComponent } from './components/quiz/resultado-quiz/resultado-quiz.component';
+import { PartiturasPremiumComponent } from './components/caracteristicas-instru/partituras-premium/partituras-premium.component';
+import { PoliticaPrivacidadComponent } from './components/politica-privacidad/politica-privacidad.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { ResultadoQuizComponent } from './components/resultado-quiz/resultado-qu
     FavoritosComponent,
     ContactoComponent,
     CaracteristicasInstruComponent,
-    ResultadoQuizComponent
+    ResultadoQuizComponent,
+    PartiturasPremiumComponent,
+    PoliticaPrivacidadComponent
   ],
   imports: [
     BrowserModule,

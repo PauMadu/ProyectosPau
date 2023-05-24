@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background: radial-gradient(#39566C 40%, #54697a);">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background: radial-gradient(#39566c 40%, #54697a); opacity: 0.9; ">
     <div class="container-fluid">
-        <a class="navbar-brand fw-bolder fs-2 " href="/main" style="font-family: Georgia, 'Times New Roman', Times, serif;"><img width="50px" src="assets/icono.png" class="img-fluid"> InstruChoice</a>
+        <a class="navbar-brand fw-bolder fs-2 " href="/main" style="font-family: nasalization; text-shadow: 0.1em 0.1em 0.2em black"><img width="50px" src="assets/icono.png" class="img-fluid"> InstruChoice</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end bg-dark " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel" style="font-family: Georgia, 'Times New Roman', Times, serif;">InstruChoice</h5>
+                <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel" style="font-family: nasalization; text-shadow: 0.1em 0.1em 0.2em black">InstruChoice</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -29,8 +29,6 @@
     </div>
 </nav>
 
-
-
 <div class="fondoInstru container-fluid pb-5">
     <div class="row p-0 m-0 d-flex justify-content-center">
         <div class="tituloInstru col"></div>
@@ -41,24 +39,21 @@
         </div>
     </div>   
     <div id="liveAlertPlaceholder"></div>     
-    <div class="row justify-content-center g-5">
-        <div *ngFor="let instru of instrumentos" class="col-8 col-xs-5 col-lg-3 m-5 mb-2">
-            <div  class="card m-auto position-relative">
-                <div class="ratio ratio-16x9 border-bottom" >
+    <div class="row justify-content-center">
+        <div *ngFor="let instru of instrumentos" class="col-8 col-md-5 col-xxl-3 m-5 mb-2">
+            <div  class="card m-auto position-relative p-4">
+                <div class="ratio ratio-16x9 border-bottom"> 
                     <img src="{{instru.foto}}" class="card-img-top p-3" alt="...">
                 </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="row d-flex align-items-end">
-                        <div class="col ">
-                            <div class="fav btn p-3"></div>
-                        </div>
-                    </div>
-                    <h2 class="card-title text-decoration-underline text-capitalize">{{instru.nombre}}</h2>
-                    <p class="card-text fs-4">Familia: {{instru.familia}}</p>
-                  <div class="mb-2">
-<!--Hay que cojer el id de alguna forma, guardarlo en una variable y usarlo para poder entrar en ver instrumento, pasandolo por la url o algo-->
-                    <a class="btn caractInstru fs-5" href="/caracteristicas">Ver Instrumento</a>
-                  </div>
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="card-title text-capitalize fw-bolder text-white" style="font-family: nasalization;">{{instru.nombre}}</h2>
+                    <p class="card-text fs-4 text-white">Familia: {{instru.familia}}</p>
+                    <form class="mb-2" name="" id="myForm" action="/caracteristicas" method="">
+                        <label>
+                            <input type="text" name="nombreInstru" value="{{instru.nombre}}" hidden>
+                        </label>
+                        <button class="btn caractInstru fs-5" href="/caracteristicas">Ver Instrumento</button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -29,7 +29,10 @@ export class RegisterComponent implements OnInit{
       console.log(response);
       this.router.navigate(["/login"])
     })
-    .catch(error=>console.log(error))
+    .catch(error=>{
+      console.log(error)
+      alert(error)
+    })
   }
 
   onClick(){

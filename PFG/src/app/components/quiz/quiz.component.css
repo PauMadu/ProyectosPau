@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'nasalization';
+    src: url('../../../assets/fonts/nasalization-rg.otf') format('truetype');
+}
+
 .fondoQuiz{
     background-image: url('/assets/fondo.png');
     background-position-y:-1em;

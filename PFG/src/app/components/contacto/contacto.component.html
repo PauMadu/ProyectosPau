@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background: radial-gradient(#39566c 40%, #54697a); opacity: 0.9;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background: radial-gradient(#39566c 40%, #54697a); opacity: 0.9; ">
     <div class="container-fluid">
-        <a class="navbar-brand fw-bolder fs-2 " href="/main" style="font-family: Georgia, 'Times New Roman', Times, serif;"><img width="50px" src="assets/icono.png" class="img-fluid"> InstruChoice</a>
+        <a class="navbar-brand fw-bolder fs-2 " href="/main" style="font-family: nasalization; text-shadow: 0.1em 0.1em 0.2em black"><img width="50px" src="assets/icono.png" class="img-fluid"> InstruChoice</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end bg-dark " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel" style="font-family: Georgia, 'Times New Roman', Times, serif;">InstruChoice</h5>
+                <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel" style="font-family: nasalization; text-shadow: 0.1em 0.1em 0.2em black">InstruChoice</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -29,12 +29,15 @@
     </div>
 </nav>
 
-
-
 <div class="fondoContacto container-fluid pb-5">
     <div class="row p-0 m-0 d-flex justify-content-center">
         <div class="tituloContacto col"></div>
     </div>
+    <div class="row d-flex justify-content-center mb-4" style="margin-top: -35px;">
+        <div class="col-8 col-lg-4 ">
+            <div *ngIf="emailEnviado" class="d-flex justify-content-center text-light bg-success rounded p-1 mt-4">El email se ha enviado correctamente.<br>Recibirá una respuesta en menos de 24h.</div>
+        </div>
+    </div>    
     <div class="row pb-3">
         <div class="col-12 d-flex justify-content-center align-items-center">
             <form class="contact-form" (submit)="sendEmail($event)">
@@ -64,11 +67,10 @@
                 </div>
                 <div class="row mt-3" style="margin-right: -2em;">
                     <div class="col d-flex justify-content-end pb-5">
-                        <input type="submit" class="enviar btn btn-primary fs-5" value="Enviar">
+                        <input target="_blank" type="submit" class="enviar btn btn-primary fs-5" value="Enviar" (click)="enviarEmail()">
                     </div>
                 </div>
             </form>
         </div>
-
-    </div>  
+    </div>
 </div>

@@ -22,6 +22,5 @@ export class ComponentsService {
 
   logout() {
     return signOut(this.auth);
-  }
-  
+  } 
 }

@@ -14,6 +14,4 @@ export class InstrumentosService {
     const instruRef = collection(this.firestore, "instrumentos");
     return collectionData(instruRef, { idField: 'id' }) as Observable<Instrumento[]>;
   }
-
-
 }

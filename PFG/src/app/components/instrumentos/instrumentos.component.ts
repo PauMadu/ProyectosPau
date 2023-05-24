@@ -19,13 +19,14 @@ export class InstrumentosComponent implements OnInit {
     private router: Router,
   ){
     this.instrumentos=[{
-      foto:"https://instrumentosetnicos.org/wp-content/uploads/dulzaina_valenciana_m.jpg",
-      descripcion:"esto es una prueba de descripcion",
-      familia:"viento",
+      foto:"",
+      descripcion:"",
+      familia:"",
       favoritos:false,
-      link_compra:"string.com",
-      url_video:"string.com",
-      nombre:"Bombo",
+      link_compra:"",
+      url_video:"",
+      nombre:"",
+      partitura:"",
     }]
   }
 
@@ -35,17 +36,15 @@ export class InstrumentosComponent implements OnInit {
     })
   }
 
+  clickCaract(){
+    this.router.navigate(['/caracteristicas']);
+  }
+
   clickLogOut() {
     this.componentsservice.logout()
       .then(() => {
         this.router.navigate(['/login']);
       })
       .catch(error => console.log(error));
-  }
-
-  clickFav(){ //Como consigo la propiedad favoritos, y la puedo modificar??
-    /*this.instrumentosService.getInstru(favoritos).subscribe(instrumentos => {
-      this.instrumentos = instrumentos;
-  })*/
   }
 }
